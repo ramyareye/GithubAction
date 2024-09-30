@@ -12,4 +12,5 @@ WORKDIR /app
 
 COPY --from=build /project/target/helloworld-1.0-SNAPSHOT.jar ./
 
+
 CMD ["java", "-jar", "./helloworld-1.0-SNAPSHOT.jar"]
